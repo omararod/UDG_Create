@@ -1,0 +1,9 @@
+echo compiling source files...
+g++ -c -std=c++11  USBLayer.cpp  ExternalSensors.cpp  UDG_Create.cpp SerialPort.c  
+echo linking and packaging...   
+ar rvs libUDG_Create.a ExternalSensors.o  UDG_Create.o SerialPort.o USBLayer.o
+ar rvs UDG_Create.a ExternalSensors.o  UDG_Create.o SerialPort.o USBLayer.o
+echo cleaning...
+rm *.o
+echo done :D
+

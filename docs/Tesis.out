@@ -1,0 +1,257 @@
+\BOOKMARK [0][-]{chapter*.2}{\315ndice de figuras}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 2
+\BOOKMARK [0][-]{chapter.2}{Marco te\363rico}{}% 3
+\BOOKMARK [1][-]{section.2.1}{El iRobot Create\256}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{El est\341ndar RS-232}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.3}{El est\341ndar USB 2.0}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.3.1}{Protocolo de comunicaci\363n USB}{section.2.3}% 7
+\BOOKMARK [2][-]{subsection.2.3.2}{Conexi\363n, desconexi\363n y enumeraci\363n de dispositivos}{section.2.3}% 8
+\BOOKMARK [2][-]{subsection.2.3.3}{La clase HID}{section.2.3}% 9
+\BOOKMARK [0][-]{chapter.3}{Especificaci\363n Tecnol\363gica-Metodol\363gica}{}% 10
+\BOOKMARK [1][-]{section.3.1}{Estructura organizacional del hardware}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.2}{Estructura organizacional del software}{chapter.3}% 12
+\BOOKMARK [2][-]{subsection.3.2.1}{Capa de comunicaci\363n}{section.3.2}% 13
+\BOOKMARK [2][-]{subsection.3.2.2}{Capa de abstracci\363n}{section.3.2}% 14
+\BOOKMARK [2][-]{subsection.3.2.3}{Capa de aplicaci\363n}{section.3.2}% 15
+\BOOKMARK [1][-]{section.3.3}{Tecnolog\355as a utilizar}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.3.1}{Microcontrolador PIC18F4550}{section.3.3}% 17
+\BOOKMARK [2][-]{subsection.3.3.2}{La arquitectura x86}{section.3.3}% 18
+\BOOKMARK [2][-]{subsection.3.3.3}{c++ 11}{section.3.3}% 19
+\BOOKMARK [0][-]{chapter.4}{Implementaci\363n de hardware}{}% 20
+\BOOKMARK [1][-]{section.4.1}{Alimentaci\363n el\351ctrica}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.2}{Circuito para la conexi\363n serial RS-232}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.3}{Circuito para la comunicaci\363n USB 2.0}{chapter.4}% 23
+\BOOKMARK [0][-]{chapter.5}{Implementaci\363n de Software}{}% 24
+\BOOKMARK [1][-]{section.5.1}{Firmware del microcontrolador}{chapter.5}% 25
+\BOOKMARK [2][-]{subsection.5.1.1}{Configuraci\363n del oscilador para la comunicaci\363n USB 2.0}{section.5.1}% 26
+\BOOKMARK [2][-]{subsection.5.1.2}{Descriptores USB}{section.5.1}% 27
+\BOOKMARK [2][-]{subsection.5.1.3}{Configuraci\363n de puertos}{section.5.1}% 28
+\BOOKMARK [2][-]{subsection.5.1.4}{Lectura de sensores externos}{section.5.1}% 29
+\BOOKMARK [1][-]{section.5.2}{Interacci\363n con el driver HID}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.3}{Comunicaci\363n mediante el est\341ndar RS-232}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.4}{Comunicaci\363n serial en Linux}{chapter.5}% 32
+\BOOKMARK [2][-]{subsection.5.4.1}{Formato b\341sico de instrucci\363n}{section.5.4}% 33
+\BOOKMARK [2][-]{subsection.5.4.2}{Instrucciones de lectura}{section.5.4}% 34
+\BOOKMARK [2][-]{subsection.5.4.3}{Instrucciones de streaming}{section.5.4}% 35
+\BOOKMARK [2][-]{subsection.5.4.4}{Ordenamiento de bytes y tipos de datos}{section.5.4}% 36
+\BOOKMARK [0][-]{chapter.6}{Pruebas y An\341lisis de resultados}{}% 37
+\BOOKMARK [0][-]{chapter.7}{Manual de Usuario}{}% 38
+\BOOKMARK [1][-]{section.7.1}{La placa fen\363lica}{chapter.7}% 39
+\BOOKMARK [1][-]{section.7.2}{Conexiones f\355sicas}{chapter.7}% 40
+\BOOKMARK [1][-]{section.7.3}{Dependencias de software}{chapter.7}% 41
+\BOOKMARK [2][-]{subsection.7.3.1}{Recompilaci\363n de la biblioteca con g++}{section.7.3}% 42
+\BOOKMARK [1][-]{section.7.4}{Uso de UDG\137Create de manera local}{chapter.7}% 43
+\BOOKMARK [1][-]{section.7.5}{Uso de UDG\137Create como biblioteca est\341ndar}{chapter.7}% 44
+\BOOKMARK [1][-]{section.7.6}{La Clase Create}{chapter.7}% 45
+\BOOKMARK [2][-]{subsection.7.6.1}{Tipos de datos y enumeraciones}{section.7.6}% 46
+\BOOKMARK [3][-]{subsubsection.7.6.1.1}{enum errorCodes}{subsection.7.6.1}% 47
+\BOOKMARK [3][-]{subsubsection.7.6.1.2}{enum modes}{subsection.7.6.1}% 48
+\BOOKMARK [3][-]{subsubsection.7.6.1.3}{enum baudCode}{subsection.7.6.1}% 49
+\BOOKMARK [3][-]{subsubsection.7.6.1.4}{enum chargingstates}{subsection.7.6.1}% 50
+\BOOKMARK [3][-]{subsubsection.7.6.1.5}{enum infraredbytechars}{subsection.7.6.1}% 51
+\BOOKMARK [3][-]{subsubsection.7.6.1.6}{ enum VerbosityLevels}{subsection.7.6.1}% 52
+\BOOKMARK [3][-]{subsubsection.7.6.1.7}{t\137verbosity}{subsection.7.6.1}% 53
+\BOOKMARK [3][-]{subsubsection.7.6.1.8}{ enum BoolSigned}{subsection.7.6.1}% 54
+\BOOKMARK [3][-]{subsubsection.7.6.1.9}{ boolSigned}{subsection.7.6.1}% 55
+\BOOKMARK [3][-]{subsubsection.7.6.1.10}{ NUMBER\137OF\137SENSORS }{subsection.7.6.1}% 56
+\BOOKMARK [3][-]{subsubsection.7.6.1.11}{int16}{subsection.7.6.1}% 57
+\BOOKMARK [2][-]{subsection.7.6.2}{Miembros \(privados\)}{section.7.6}% 58
+\BOOKMARK [3][-]{paragraph.7.6.2.0.1}{std::string portName}{subsection.7.6.2}% 59
+\BOOKMARK [4][-]{paragraph.7.6.2.0.2}{int mode}{paragraph.7.6.2.0.1}% 60
+\BOOKMARK [4][-]{paragraph.7.6.2.0.3}{bool charging}{paragraph.7.6.2.0.1}% 61
+\BOOKMARK [4][-]{paragraph.7.6.2.0.4}{int portDescriptor}{paragraph.7.6.2.0.1}% 62
+\BOOKMARK [4][-]{paragraph.7.6.2.0.5}{int baudRate}{paragraph.7.6.2.0.1}% 63
+\BOOKMARK [4][-]{paragraph.7.6.2.0.6}{bool bumpRight}{paragraph.7.6.2.0.1}% 64
+\BOOKMARK [4][-]{paragraph.7.6.2.0.7}{bool bumpLeft}{paragraph.7.6.2.0.1}% 65
+\BOOKMARK [4][-]{paragraph.7.6.2.0.8}{bool wheelDropRight}{paragraph.7.6.2.0.1}% 66
+\BOOKMARK [4][-]{paragraph.7.6.2.0.9}{bool wheelDropLeft}{paragraph.7.6.2.0.1}% 67
+\BOOKMARK [4][-]{paragraph.7.6.2.0.10}{bool wheelDropCaster}{paragraph.7.6.2.0.1}% 68
+\BOOKMARK [4][-]{paragraph.7.6.2.0.11}{bool wall}{paragraph.7.6.2.0.1}% 69
+\BOOKMARK [4][-]{paragraph.7.6.2.0.12}{bool cliffLeft}{paragraph.7.6.2.0.1}% 70
+\BOOKMARK [4][-]{paragraph.7.6.2.0.13}{bool cliffFrontLeft}{paragraph.7.6.2.0.1}% 71
+\BOOKMARK [4][-]{paragraph.7.6.2.0.14}{bool cliffFrontRight}{paragraph.7.6.2.0.1}% 72
+\BOOKMARK [4][-]{paragraph.7.6.2.0.15}{bool cliffRight}{paragraph.7.6.2.0.1}% 73
+\BOOKMARK [4][-]{paragraph.7.6.2.0.16}{bool virtualWall}{paragraph.7.6.2.0.1}% 74
+\BOOKMARK [4][-]{paragraph.7.6.2.0.17}{bool ld0}{paragraph.7.6.2.0.1}% 75
+\BOOKMARK [4][-]{paragraph.7.6.2.0.18}{bool ld1}{paragraph.7.6.2.0.1}% 76
+\BOOKMARK [4][-]{paragraph.7.6.2.0.19}{bool ld2}{paragraph.7.6.2.0.1}% 77
+\BOOKMARK [4][-]{paragraph.7.6.2.0.20}{bool rightWheel}{paragraph.7.6.2.0.1}% 78
+\BOOKMARK [4][-]{paragraph.7.6.2.0.21}{bool leftWheel}{paragraph.7.6.2.0.1}% 79
+\BOOKMARK [4][-]{paragraph.7.6.2.0.22}{unsigned char infraredbyte}{paragraph.7.6.2.0.1}% 80
+\BOOKMARK [4][-]{paragraph.7.6.2.0.23}{bool advancebtn}{paragraph.7.6.2.0.1}% 81
+\BOOKMARK [4][-]{paragraph.7.6.2.0.24}{bool playbtn}{paragraph.7.6.2.0.1}% 82
+\BOOKMARK [4][-]{paragraph.7.6.2.0.25}{int distance}{paragraph.7.6.2.0.1}% 83
+\BOOKMARK [4][-]{paragraph.7.6.2.0.26}{int angle}{paragraph.7.6.2.0.1}% 84
+\BOOKMARK [4][-]{paragraph.7.6.2.0.27}{unsigned char chargingstate}{paragraph.7.6.2.0.1}% 85
+\BOOKMARK [4][-]{paragraph.7.6.2.0.28}{int voltage}{paragraph.7.6.2.0.1}% 86
+\BOOKMARK [4][-]{paragraph.7.6.2.0.29}{int current}{paragraph.7.6.2.0.1}% 87
+\BOOKMARK [4][-]{paragraph.7.6.2.0.30}{unsigned char batterytemperature}{paragraph.7.6.2.0.1}% 88
+\BOOKMARK [4][-]{paragraph.7.6.2.0.31}{int batterycharge}{paragraph.7.6.2.0.1}% 89
+\BOOKMARK [4][-]{paragraph.7.6.2.0.32}{int batterycapacity}{paragraph.7.6.2.0.1}% 90
+\BOOKMARK [4][-]{paragraph.7.6.2.0.33}{int wallsignal}{paragraph.7.6.2.0.1}% 91
+\BOOKMARK [4][-]{paragraph.7.6.2.0.34}{int cliffls}{paragraph.7.6.2.0.1}% 92
+\BOOKMARK [4][-]{paragraph.7.6.2.0.35}{int clifffls}{paragraph.7.6.2.0.1}% 93
+\BOOKMARK [4][-]{paragraph.7.6.2.0.36}{int clifffrs}{paragraph.7.6.2.0.1}% 94
+\BOOKMARK [4][-]{paragraph.7.6.2.0.37}{int cliffrs}{paragraph.7.6.2.0.1}% 95
+\BOOKMARK [4][-]{paragraph.7.6.2.0.38}{bool digitalinput0}{paragraph.7.6.2.0.1}% 96
+\BOOKMARK [4][-]{paragraph.7.6.2.0.39}{bool digitalinput1}{paragraph.7.6.2.0.1}% 97
+\BOOKMARK [4][-]{paragraph.7.6.2.0.40}{bool digitalinput2}{paragraph.7.6.2.0.1}% 98
+\BOOKMARK [4][-]{paragraph.7.6.2.0.41}{bool digitalinput3}{paragraph.7.6.2.0.1}% 99
+\BOOKMARK [4][-]{paragraph.7.6.2.0.42}{bool baudchangerate}{paragraph.7.6.2.0.1}% 100
+\BOOKMARK [4][-]{paragraph.7.6.2.0.43}{int cargoanalogsignal}{paragraph.7.6.2.0.1}% 101
+\BOOKMARK [4][-]{paragraph.7.6.2.0.44}{bool homebase}{paragraph.7.6.2.0.1}% 102
+\BOOKMARK [4][-]{paragraph.7.6.2.0.45}{bool internalcharger}{paragraph.7.6.2.0.1}% 103
+\BOOKMARK [4][-]{paragraph.7.6.2.0.46}{unsigned char oimode}{paragraph.7.6.2.0.1}% 104
+\BOOKMARK [4][-]{paragraph.7.6.2.0.47}{unsigned char songnumber}{paragraph.7.6.2.0.1}% 105
+\BOOKMARK [4][-]{paragraph.7.6.2.0.48}{bool songplaying}{paragraph.7.6.2.0.1}% 106
+\BOOKMARK [4][-]{paragraph.7.6.2.0.49}{unsigned char streampackets}{paragraph.7.6.2.0.1}% 107
+\BOOKMARK [4][-]{paragraph.7.6.2.0.50}{int reqvelocity}{paragraph.7.6.2.0.1}% 108
+\BOOKMARK [4][-]{paragraph.7.6.2.0.51}{int reqradius}{paragraph.7.6.2.0.1}% 109
+\BOOKMARK [4][-]{paragraph.7.6.2.0.52}{int reqrvelocity}{paragraph.7.6.2.0.1}% 110
+\BOOKMARK [4][-]{paragraph.7.6.2.0.53}{int reqlvelocity}{paragraph.7.6.2.0.1}% 111
+\BOOKMARK [4][-]{paragraph.7.6.2.0.54}{bool streamingState}{paragraph.7.6.2.0.1}% 112
+\BOOKMARK [4][-]{paragraph.7.6.2.0.55}{bool externalSensorsEnabled}{paragraph.7.6.2.0.1}% 113
+\BOOKMARK [4][-]{paragraph.7.6.2.0.56}{t\137verbosity robotVerbosity}{paragraph.7.6.2.0.1}% 114
+\BOOKMARK [2][-]{subsection.7.6.3}{Funciones}{section.7.6}% 115
+\BOOKMARK [3][-]{subsubsection.7.6.3.1}{Publicas}{subsection.7.6.3}% 116
+\BOOKMARK [4][-]{paragraph.7.6.3.1.1}{Create\(\)}{subsubsection.7.6.3.1}% 117
+\BOOKMARK [4][-]{paragraph.7.6.3.1.2}{Create\( std::string \137portName, t\137verbosity verbosityLevel \)}{subsubsection.7.6.3.1}% 118
+\BOOKMARK [4][-]{paragraph.7.6.3.1.3}{126Create\(\)}{subsubsection.7.6.3.1}% 119
+\BOOKMARK [4][-]{paragraph.7.6.3.1.4}{std::string getPortName\(\)}{subsubsection.7.6.3.1}% 120
+\BOOKMARK [4][-]{paragraph.7.6.3.1.5}{void start\(\)}{subsubsection.7.6.3.1}% 121
+\BOOKMARK [4][-]{paragraph.7.6.3.1.6}{void baud\(unsigned char baudRate\)}{subsubsection.7.6.3.1}% 122
+\BOOKMARK [4][-]{paragraph.7.6.3.1.7}{void control\(\)}{subsubsection.7.6.3.1}% 123
+\BOOKMARK [4][-]{paragraph.7.6.3.1.8}{void safe\(\)}{subsubsection.7.6.3.1}% 124
+\BOOKMARK [4][-]{paragraph.7.6.3.1.9}{void full\(\)}{subsubsection.7.6.3.1}% 125
+\BOOKMARK [4][-]{paragraph.7.6.3.1.10}{void spot\(\)}{subsubsection.7.6.3.1}% 126
+\BOOKMARK [4][-]{paragraph.7.6.3.1.11}{void cover\(\)}{subsubsection.7.6.3.1}% 127
+\BOOKMARK [4][-]{paragraph.7.6.3.1.12}{void coverAndDock\(\)}{subsubsection.7.6.3.1}% 128
+\BOOKMARK [4][-]{paragraph.7.6.3.1.13}{void demo\( unsigned char demo \)}{subsubsection.7.6.3.1}% 129
+\BOOKMARK [4][-]{paragraph.7.6.3.1.14}{void drive\( int velocity, int radius \)}{subsubsection.7.6.3.1}% 130
+\BOOKMARK [4][-]{paragraph.7.6.3.1.15}{void driveDirect\( int rightVelocity, int leftVelocity \)}{subsubsection.7.6.3.1}% 131
+\BOOKMARK [4][-]{paragraph.7.6.3.1.16}{void leds\( unsigned char bit,unsigned char color, unsigned char intensity \)}{subsubsection.7.6.3.1}% 132
+\BOOKMARK [4][-]{paragraph.7.6.3.1.17}{void digitalOutputs\(unsigned char outputBits\)}{subsubsection.7.6.3.1}% 133
+\BOOKMARK [4][-]{paragraph.7.6.3.1.18}{ void pwmLowSideDrivers\( unsigned char dirver1, unsigned char driver1, unsigned char driver0\)}{subsubsection.7.6.3.1}% 134
+\BOOKMARK [4][-]{paragraph.7.6.3.1.19}{void lowSideDrivers\(unsigned char bits\)}{subsubsection.7.6.3.1}% 135
+\BOOKMARK [4][-]{paragraph.7.6.3.1.20}{void sendIr\(unsigned char byteValue\)}{subsubsection.7.6.3.1}% 136
+\BOOKMARK [4][-]{paragraph.7.6.3.1.21}{ void song\(unsigned char,unsigned char,...\)}{subsubsection.7.6.3.1}% 137
+\BOOKMARK [4][-]{paragraph.7.6.3.1.22}{void playSong\(unsigned char songNumber\)}{subsubsection.7.6.3.1}% 138
+\BOOKMARK [4][-]{paragraph.7.6.3.1.23}{int sensors\(unsigned char idPacket\)}{subsubsection.7.6.3.1}% 139
+\BOOKMARK [4][-]{paragraph.7.6.3.1.24}{int getSizePacket\(int idPacket\)}{subsubsection.7.6.3.1}% 140
+\BOOKMARK [4][-]{paragraph.7.6.3.1.25}{void stream\(unsigned char* destinationBuffer,void* thread,int n,...\)}{subsubsection.7.6.3.1}% 141
+\BOOKMARK [4][-]{paragraph.7.6.3.1.26}{void pauseResumeStream\(bool streamState\)}{subsubsection.7.6.3.1}% 142
+\BOOKMARK [4][-]{paragraph.7.6.3.1.27}{void script\(unsigned char n,...\);}{subsubsection.7.6.3.1}% 143
+\BOOKMARK [4][-]{paragraph.7.6.3.1.28}{void playScript\(\)}{subsubsection.7.6.3.1}% 144
+\BOOKMARK [4][-]{paragraph.7.6.3.1.29}{void showScript\(\)}{subsubsection.7.6.3.1}% 145
+\BOOKMARK [4][-]{paragraph.7.6.3.1.30}{void waitTime\(unsigned char time\)}{subsubsection.7.6.3.1}% 146
+\BOOKMARK [4][-]{paragraph.7.6.3.1.31}{void waitDistance\(int distance\)}{subsubsection.7.6.3.1}% 147
+\BOOKMARK [4][-]{paragraph.7.6.3.1.32}{void waitAngle\(int angle\)}{subsubsection.7.6.3.1}% 148
+\BOOKMARK [4][-]{paragraph.7.6.3.1.33}{void waitEvent\(unsigned char event\)}{subsubsection.7.6.3.1}% 149
+\BOOKMARK [4][-]{paragraph.7.6.3.1.34}{char* charMode\(int mode\)}{subsubsection.7.6.3.1}% 150
+\BOOKMARK [4][-]{paragraph.7.6.3.1.35}{int getBaudCode\(int baudCode\)}{subsubsection.7.6.3.1}% 151
+\BOOKMARK [4][-]{paragraph.7.6.3.1.36}{bool getBumpRight\(\)}{subsubsection.7.6.3.1}% 152
+\BOOKMARK [4][-]{paragraph.7.6.3.1.37}{bool getBumpLeft\(\)}{subsubsection.7.6.3.1}% 153
+\BOOKMARK [4][-]{paragraph.7.6.3.1.38}{bool getWheelDropRight\(\)}{subsubsection.7.6.3.1}% 154
+\BOOKMARK [4][-]{paragraph.7.6.3.1.39}{ bool getWheelDropLeft\(\)}{subsubsection.7.6.3.1}% 155
+\BOOKMARK [4][-]{paragraph.7.6.3.1.40}{bool getWheelDropCaster\(\)}{subsubsection.7.6.3.1}% 156
+\BOOKMARK [4][-]{paragraph.7.6.3.1.41}{bool getWallSeen\(\)}{subsubsection.7.6.3.1}% 157
+\BOOKMARK [4][-]{paragraph.7.6.3.1.42}{bool getCliffLeft\(\)}{subsubsection.7.6.3.1}% 158
+\BOOKMARK [4][-]{paragraph.7.6.3.1.43}{bool getCliffFrontLeft\(\)}{subsubsection.7.6.3.1}% 159
+\BOOKMARK [4][-]{paragraph.7.6.3.1.44}{bool getCliffFrontRight\(\)}{subsubsection.7.6.3.1}% 160
+\BOOKMARK [4][-]{paragraph.7.6.3.1.45}{bool getCliffRight\(\)}{subsubsection.7.6.3.1}% 161
+\BOOKMARK [4][-]{paragraph.7.6.3.1.46}{bool getVirtualWall\(\)}{subsubsection.7.6.3.1}% 162
+\BOOKMARK [4][-]{paragraph.7.6.3.1.47}{bool getLd0\(\)}{subsubsection.7.6.3.1}% 163
+\BOOKMARK [4][-]{paragraph.7.6.3.1.48}{bool getLd1\(\)}{subsubsection.7.6.3.1}% 164
+\BOOKMARK [4][-]{paragraph.7.6.3.1.49}{bool getLd2\(\)}{subsubsection.7.6.3.1}% 165
+\BOOKMARK [4][-]{paragraph.7.6.3.1.50}{bool getRightWheel\(\)}{subsubsection.7.6.3.1}% 166
+\BOOKMARK [4][-]{paragraph.7.6.3.1.51}{ bool getLeftWheel\(\)}{subsubsection.7.6.3.1}% 167
+\BOOKMARK [4][-]{paragraph.7.6.3.1.52}{unsigned char getInfraredByte\(\)}{subsubsection.7.6.3.1}% 168
+\BOOKMARK [4][-]{paragraph.7.6.3.1.53}{bool getAdvanceBtn\(\)}{subsubsection.7.6.3.1}% 169
+\BOOKMARK [4][-]{paragraph.7.6.3.1.54}{bool getPlayBtn\(\)}{subsubsection.7.6.3.1}% 170
+\BOOKMARK [4][-]{paragraph.7.6.3.1.55}{int getDistance\(\)}{subsubsection.7.6.3.1}% 171
+\BOOKMARK [4][-]{paragraph.7.6.3.1.56}{int getAngle\(\)}{subsubsection.7.6.3.1}% 172
+\BOOKMARK [4][-]{paragraph.7.6.3.1.57}{unsigned char getChargingState\(\)}{subsubsection.7.6.3.1}% 173
+\BOOKMARK [4][-]{paragraph.7.6.3.1.58}{int getVoltage\(\)}{subsubsection.7.6.3.1}% 174
+\BOOKMARK [4][-]{paragraph.7.6.3.1.59}{int getCurrent\(\)}{subsubsection.7.6.3.1}% 175
+\BOOKMARK [4][-]{paragraph.7.6.3.1.60}{unsigned char getBatteryTemperature\(\)}{subsubsection.7.6.3.1}% 176
+\BOOKMARK [4][-]{paragraph.7.6.3.1.61}{int getBatteryCharge\(\)}{subsubsection.7.6.3.1}% 177
+\BOOKMARK [4][-]{paragraph.7.6.3.1.62}{int getBatteryCapacity\(\)}{subsubsection.7.6.3.1}% 178
+\BOOKMARK [4][-]{paragraph.7.6.3.1.63}{int getWallSignal\(\)}{subsubsection.7.6.3.1}% 179
+\BOOKMARK [4][-]{paragraph.7.6.3.1.64}{int getCliffLS\(\)}{subsubsection.7.6.3.1}% 180
+\BOOKMARK [4][-]{paragraph.7.6.3.1.65}{int getCliffFLS\(\)}{subsubsection.7.6.3.1}% 181
+\BOOKMARK [4][-]{paragraph.7.6.3.1.66}{int getCliffFRS\(\)}{subsubsection.7.6.3.1}% 182
+\BOOKMARK [4][-]{paragraph.7.6.3.1.67}{int getCliffRS\(\)}{subsubsection.7.6.3.1}% 183
+\BOOKMARK [4][-]{paragraph.7.6.3.1.68}{ bool getDigitalInput0\(\)}{subsubsection.7.6.3.1}% 184
+\BOOKMARK [4][-]{paragraph.7.6.3.1.69}{bool getDigitalInput1\(\)}{subsubsection.7.6.3.1}% 185
+\BOOKMARK [4][-]{paragraph.7.6.3.1.70}{bool getDigitalInput2\(\)}{subsubsection.7.6.3.1}% 186
+\BOOKMARK [4][-]{paragraph.7.6.3.1.71}{bool getDigitalInput3\(\)}{subsubsection.7.6.3.1}% 187
+\BOOKMARK [4][-]{paragraph.7.6.3.1.72}{bool getBaudRateChange\(\)}{subsubsection.7.6.3.1}% 188
+\BOOKMARK [4][-]{paragraph.7.6.3.1.73}{int getCargoAnalogSignal\(\)}{subsubsection.7.6.3.1}% 189
+\BOOKMARK [4][-]{paragraph.7.6.3.1.74}{bool getHomeBase\(\)}{subsubsection.7.6.3.1}% 190
+\BOOKMARK [4][-]{paragraph.7.6.3.1.75}{bool getInternalCharger\(\)}{subsubsection.7.6.3.1}% 191
+\BOOKMARK [4][-]{paragraph.7.6.3.1.76}{unsigned char getOIMode\(\)}{subsubsection.7.6.3.1}% 192
+\BOOKMARK [4][-]{paragraph.7.6.3.1.77}{unsigned char getSongNumber\(\)}{subsubsection.7.6.3.1}% 193
+\BOOKMARK [4][-]{paragraph.7.6.3.1.78}{bool getSongPlaying\(\)}{subsubsection.7.6.3.1}% 194
+\BOOKMARK [4][-]{paragraph.7.6.3.1.79}{unsigned char getStreamPackets\(\)}{subsubsection.7.6.3.1}% 195
+\BOOKMARK [4][-]{paragraph.7.6.3.1.80}{int getRequestedVelocity\(\)}{subsubsection.7.6.3.1}% 196
+\BOOKMARK [4][-]{paragraph.7.6.3.1.81}{int getRequestedRadius\(\)}{subsubsection.7.6.3.1}% 197
+\BOOKMARK [4][-]{paragraph.7.6.3.1.82}{int getRequestedRVelocity\(\)}{subsubsection.7.6.3.1}% 198
+\BOOKMARK [4][-]{paragraph.7.6.3.1.83}{int getRequestedLVelocity\(\)}{subsubsection.7.6.3.1}% 199
+\BOOKMARK [4][-]{paragraph.7.6.3.1.84}{bool getStreamingState\(\)}{subsubsection.7.6.3.1}% 200
+\BOOKMARK [4][-]{paragraph.7.6.3.1.85}{void getExternalSensors\(int[NUMBER\137OF\137SENSORS] sensors\)}{subsubsection.7.6.3.1}% 201
+\BOOKMARK [4][-]{paragraph.7.6.3.1.86}{bool getExternalSensorsEnabledStatus\(\)}{subsubsection.7.6.3.1}% 202
+\BOOKMARK [4][-]{paragraph.7.6.3.1.87}{void setVerbosity\(t\137verbosity\)}{subsubsection.7.6.3.1}% 203
+\BOOKMARK [4][-]{paragraph.7.6.3.1.88}{int getExternalNthSensor\(int n\)}{subsubsection.7.6.3.1}% 204
+\BOOKMARK [4][-]{paragraph.7.6.3.1.89}{int toLittleEndian\(unsigned char* source,int nbytes,int* destination,boolSigned sign\)}{subsubsection.7.6.3.1}% 205
+\BOOKMARK [3][-]{subsubsection.7.6.3.2}{Privadas}{subsection.7.6.3}% 206
+\BOOKMARK [4][-]{paragraph.7.6.3.2.1}{void error\(int error,void* info\)}{subsubsection.7.6.3.2}% 207
+\BOOKMARK [4][-]{paragraph.7.6.3.2.2}{void printRobotMessage\(const char* message,...\)}{subsubsection.7.6.3.2}% 208
+\BOOKMARK [4][-]{paragraph.7.6.3.2.3}{int readBumpsAndWheelDrops\(unsigned char *data\)}{subsubsection.7.6.3.2}% 209
+\BOOKMARK [4][-]{paragraph.7.6.3.2.4}{int readWall\(unsigned char *data\)}{subsubsection.7.6.3.2}% 210
+\BOOKMARK [4][-]{paragraph.7.6.3.2.5}{int readCliffLeft\(unsigned char *data\)}{subsubsection.7.6.3.2}% 211
+\BOOKMARK [4][-]{paragraph.7.6.3.2.6}{int readCliffFrontLeft\(unsigned char *data\)}{subsubsection.7.6.3.2}% 212
+\BOOKMARK [4][-]{paragraph.7.6.3.2.7}{int readCliffFrontRight\(unsigned char *data\)}{subsubsection.7.6.3.2}% 213
+\BOOKMARK [4][-]{paragraph.7.6.3.2.8}{int readCliffRight\(unsigned char *data\)}{subsubsection.7.6.3.2}% 214
+\BOOKMARK [4][-]{paragraph.7.6.3.2.9}{int readVirtualWall\(unsigned char *data\)}{subsubsection.7.6.3.2}% 215
+\BOOKMARK [4][-]{paragraph.7.6.3.2.10}{int readLSDriverAndWheelO\(unsigned char *data\)}{subsubsection.7.6.3.2}% 216
+\BOOKMARK [4][-]{paragraph.7.6.3.2.11}{int readInfraredByte\(unsigned char *data\)}{subsubsection.7.6.3.2}% 217
+\BOOKMARK [4][-]{paragraph.7.6.3.2.12}{int readButtons\(unsigned char *data\)}{subsubsection.7.6.3.2}% 218
+\BOOKMARK [4][-]{paragraph.7.6.3.2.13}{int readDistance\(unsigned char *data\)}{subsubsection.7.6.3.2}% 219
+\BOOKMARK [4][-]{paragraph.7.6.3.2.14}{int readAngle\(unsigned char *data\)}{subsubsection.7.6.3.2}% 220
+\BOOKMARK [4][-]{paragraph.7.6.3.2.15}{int readChargingState\(unsigned char *data\)}{subsubsection.7.6.3.2}% 221
+\BOOKMARK [4][-]{paragraph.7.6.3.2.16}{int readVoltage\(unsigned char *data\)}{subsubsection.7.6.3.2}% 222
+\BOOKMARK [4][-]{paragraph.7.6.3.2.17}{int readCurrent\(unsigned char *data\)}{subsubsection.7.6.3.2}% 223
+\BOOKMARK [4][-]{paragraph.7.6.3.2.18}{int readBatteryTemperature\(unsigned char *data\)}{subsubsection.7.6.3.2}% 224
+\BOOKMARK [4][-]{paragraph.7.6.3.2.19}{int readBatteryCharge\(unsigned char *data\)}{subsubsection.7.6.3.2}% 225
+\BOOKMARK [4][-]{paragraph.7.6.3.2.20}{int readWallSignal\(unsigned char *data\)}{subsubsection.7.6.3.2}% 226
+\BOOKMARK [4][-]{paragraph.7.6.3.2.21}{int readCliffLS\(unsigned char *\)data}{subsubsection.7.6.3.2}% 227
+\BOOKMARK [4][-]{paragraph.7.6.3.2.22}{int readCliffFLS\(unsigned char *data\)}{subsubsection.7.6.3.2}% 228
+\BOOKMARK [4][-]{paragraph.7.6.3.2.23}{int readCliffFRS\(unsigned char *data\)}{subsubsection.7.6.3.2}% 229
+\BOOKMARK [4][-]{paragraph.7.6.3.2.24}{int readCliffRS\(unsigned char *data\)}{subsubsection.7.6.3.2}% 230
+\BOOKMARK [4][-]{paragraph.7.6.3.2.25}{int readDigitalInputs\(unsigned char *data\)}{subsubsection.7.6.3.2}% 231
+\BOOKMARK [4][-]{paragraph.7.6.3.2.26}{int readCargoAnalogSignal\(unsigned char *data\)}{subsubsection.7.6.3.2}% 232
+\BOOKMARK [4][-]{paragraph.7.6.3.2.27}{int readChargingSources\(unsigned char *data\)}{subsubsection.7.6.3.2}% 233
+\BOOKMARK [4][-]{paragraph.7.6.3.2.28}{int readOIMode\(unsigned char *data\)}{subsubsection.7.6.3.2}% 234
+\BOOKMARK [4][-]{paragraph.7.6.3.2.29}{int readSongNumber\(unsigned char *data\)}{subsubsection.7.6.3.2}% 235
+\BOOKMARK [4][-]{paragraph.7.6.3.2.30}{int readSongPlaying\(unsigned char *data\)}{subsubsection.7.6.3.2}% 236
+\BOOKMARK [4][-]{paragraph.7.6.3.2.31}{int readStreamPackets\(unsigned char *data\)}{subsubsection.7.6.3.2}% 237
+\BOOKMARK [4][-]{paragraph.7.6.3.2.32}{int readReqVelocity\(unsigned char *data\)}{subsubsection.7.6.3.2}% 238
+\BOOKMARK [4][-]{paragraph.7.6.3.2.33}{int readReqRadius\(unsigned char *data\)}{subsubsection.7.6.3.2}% 239
+\BOOKMARK [4][-]{paragraph.7.6.3.2.34}{int readReqRVelocity\(unsigned char *data\)}{subsubsection.7.6.3.2}% 240
+\BOOKMARK [4][-]{paragraph.7.6.3.2.35}{int readReqLVelocity\(unsigned char *data\)}{subsubsection.7.6.3.2}% 241
+\BOOKMARK [4][-]{paragraph.7.6.3.2.36}{int updateSensor\(unsigned char packetID, int size\)}{subsubsection.7.6.3.2}% 242
+\BOOKMARK [4][-]{paragraph.7.6.3.2.37}{void commonInitializationProcedures\(string port,bool auto\)}{subsubsection.7.6.3.2}% 243
+\BOOKMARK [4][-]{paragraph.7.6.3.2.38}{int16 toInt16\(int integer\)}{subsubsection.7.6.3.2}% 244
+\BOOKMARK [0][-]{chapter.8}{Conclusiones y trabajo futuro}{}% 245
+\BOOKMARK [0][-]{chapter.8}{Bibliograf\355a}{}% 246
+\BOOKMARK [0][-]{chapter.9}{Anexos}{}% 247
+\BOOKMARK [1][-]{section.9.1}{main.c}{chapter.9}% 248
+\BOOKMARK [1][-]{section.9.2}{DataTypes.h}{chapter.9}% 249
+\BOOKMARK [1][-]{section.9.3}{ExternalSensors.cpp}{chapter.9}% 250
+\BOOKMARK [1][-]{section.9.4}{ExternalSensors.h}{chapter.9}% 251
+\BOOKMARK [1][-]{section.9.5}{SerialPort.c}{chapter.9}% 252
+\BOOKMARK [1][-]{section.9.6}{SerialPort.h}{chapter.9}% 253
+\BOOKMARK [1][-]{section.9.7}{UDG\137Create.cpp}{chapter.9}% 254
+\BOOKMARK [1][-]{section.9.8}{UDG\137Create.h}{chapter.9}% 255
+\BOOKMARK [1][-]{section.9.9}{USBLayer.cpp}{chapter.9}% 256
+\BOOKMARK [1][-]{section.9.10}{USBLayer.h}{chapter.9}% 257
