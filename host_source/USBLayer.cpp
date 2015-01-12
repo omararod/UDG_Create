@@ -32,6 +32,7 @@ struct hiddev_devinfo deviceInfo;
 
 t_verbosity USBVerbosity = VERBOSITY_NORMAL;
 
+//this  section has to be re-implemented for windows***********************************************
 int initializeUSB(int VID, int PID)
 {	
 	int i;
@@ -125,6 +126,8 @@ void CloseUSB()
 {
 	close(fd);
 }
+
+//*************************************************************************************************************
 void printUSBMessage(const char* message,...)
 {
 	if(USBVerbosity == VERBOSITY_NORMAL)
