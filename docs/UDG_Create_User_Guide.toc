@@ -1,0 +1,210 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Introduction}{9}{chapter.1}
+\contentsline {chapter}{\numberline {2}Setup}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Conexiones f\IeC {\'\i }sicas}{11}{section.2.1}
+\contentsline {section}{\numberline {2.2}Dependencias de software}{12}{section.2.2}
+\contentsline {section}{\numberline {2.3}Recompilaci\IeC {\'o}n de la biblioteca con g++}{12}{section.2.3}
+\contentsline {section}{\numberline {2.4}Uso de UDG\_Create de manera local}{15}{section.2.4}
+\contentsline {section}{\numberline {2.5}Uso de UDG\_Create como biblioteca est\IeC {\'a}ndar}{16}{section.2.5}
+\contentsline {chapter}{\numberline {3}La Clase Create}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Tipos de datos y enumeraciones}{17}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}enum errorCodes}{17}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}enum modes}{17}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}enum baudCode}{18}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}enum chargingstates}{18}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}enum infraredbytechars}{18}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}enum sensorPackets}{19}{subsection.3.1.6}
+\contentsline {subsection}{\numberline {3.1.7} enum VerbosityLevels}{20}{subsection.3.1.7}
+\contentsline {subsection}{\numberline {3.1.8}t\_verbosity}{20}{subsection.3.1.8}
+\contentsline {subsection}{\numberline {3.1.9} enum BoolSigned}{20}{subsection.3.1.9}
+\contentsline {subsection}{\numberline {3.1.10} boolSigned}{20}{subsection.3.1.10}
+\contentsline {subsection}{\numberline {3.1.11} NUMBER\_OF\_SENSORS }{20}{subsection.3.1.11}
+\contentsline {subsection}{\numberline {3.1.12}int16}{20}{subsection.3.1.12}
+\contentsline {section}{\numberline {3.2}Miembros (privados)}{21}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}std::string portName}{21}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}int mode}{21}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}bool charging}{21}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}int portDescriptor}{21}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}int baudRate}{21}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}bool bumpRight}{21}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}bool bumpLeft}{22}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}bool wheelDropRight}{22}{subsection.3.2.8}
+\contentsline {subsection}{\numberline {3.2.9}bool wheelDropLeft}{22}{subsection.3.2.9}
+\contentsline {subsection}{\numberline {3.2.10}bool wheelDropCaster}{22}{subsection.3.2.10}
+\contentsline {subsection}{\numberline {3.2.11}bool wall}{22}{subsection.3.2.11}
+\contentsline {subsection}{\numberline {3.2.12}bool cliffLeft}{22}{subsection.3.2.12}
+\contentsline {subsection}{\numberline {3.2.13}bool cliffFrontLeft}{22}{subsection.3.2.13}
+\contentsline {subsection}{\numberline {3.2.14}bool cliffFrontRight}{22}{subsection.3.2.14}
+\contentsline {subsection}{\numberline {3.2.15}bool cliffRight}{23}{subsection.3.2.15}
+\contentsline {subsection}{\numberline {3.2.16}bool virtualWall}{23}{subsection.3.2.16}
+\contentsline {subsection}{\numberline {3.2.17}bool ld0}{23}{subsection.3.2.17}
+\contentsline {subsection}{\numberline {3.2.18}bool ld1}{23}{subsection.3.2.18}
+\contentsline {subsection}{\numberline {3.2.19}bool ld2}{23}{subsection.3.2.19}
+\contentsline {subsection}{\numberline {3.2.20}bool rightWheel}{23}{subsection.3.2.20}
+\contentsline {subsection}{\numberline {3.2.21}bool leftWheel}{23}{subsection.3.2.21}
+\contentsline {subsection}{\numberline {3.2.22}unsigned char infraredbyte}{23}{subsection.3.2.22}
+\contentsline {subsection}{\numberline {3.2.23}bool advancebtn}{23}{subsection.3.2.23}
+\contentsline {subsection}{\numberline {3.2.24}bool playbtn}{24}{subsection.3.2.24}
+\contentsline {subsection}{\numberline {3.2.25}int distance}{24}{subsection.3.2.25}
+\contentsline {subsection}{\numberline {3.2.26}int angle}{24}{subsection.3.2.26}
+\contentsline {subsection}{\numberline {3.2.27}unsigned char chargingstate}{24}{subsection.3.2.27}
+\contentsline {subsection}{\numberline {3.2.28}int voltage}{24}{subsection.3.2.28}
+\contentsline {subsection}{\numberline {3.2.29}int current}{24}{subsection.3.2.29}
+\contentsline {subsection}{\numberline {3.2.30}unsigned char batterytemperature}{24}{subsection.3.2.30}
+\contentsline {paragraph}{\numberline {3.2.30.0.1}int batterycharge}{24}{paragraph.3.2.30.0.1}
+\contentsline {subsection}{\numberline {3.2.31}int batterycapacity}{24}{subsection.3.2.31}
+\contentsline {paragraph}{\numberline {3.2.31.0.2}int wallsignal}{25}{paragraph.3.2.31.0.2}
+\contentsline {subsection}{\numberline {3.2.32}int cliffls}{25}{subsection.3.2.32}
+\contentsline {subsection}{\numberline {3.2.33}int clifffls}{25}{subsection.3.2.33}
+\contentsline {subsection}{\numberline {3.2.34}int clifffrs}{25}{subsection.3.2.34}
+\contentsline {subsection}{\numberline {3.2.35}int cliffrs}{25}{subsection.3.2.35}
+\contentsline {subsection}{\numberline {3.2.36}bool digitalinput0}{25}{subsection.3.2.36}
+\contentsline {subsection}{\numberline {3.2.37}bool digitalinput1}{25}{subsection.3.2.37}
+\contentsline {subsection}{\numberline {3.2.38}bool digitalinput2}{25}{subsection.3.2.38}
+\contentsline {subsection}{\numberline {3.2.39}bool digitalinput3}{26}{subsection.3.2.39}
+\contentsline {subsection}{\numberline {3.2.40}bool baudchangerate}{26}{subsection.3.2.40}
+\contentsline {subsection}{\numberline {3.2.41}int cargoanalogsignal}{26}{subsection.3.2.41}
+\contentsline {subsection}{\numberline {3.2.42}bool homebase}{26}{subsection.3.2.42}
+\contentsline {subsection}{\numberline {3.2.43}bool internalcharger}{26}{subsection.3.2.43}
+\contentsline {subsection}{\numberline {3.2.44}unsigned char oimode}{26}{subsection.3.2.44}
+\contentsline {subsection}{\numberline {3.2.45}unsigned char songnumber}{26}{subsection.3.2.45}
+\contentsline {subsection}{\numberline {3.2.46}bool songplaying}{26}{subsection.3.2.46}
+\contentsline {subsection}{\numberline {3.2.47}unsigned char streampackets}{27}{subsection.3.2.47}
+\contentsline {subsection}{\numberline {3.2.48}int reqvelocity}{27}{subsection.3.2.48}
+\contentsline {subsection}{\numberline {3.2.49}int reqradius}{27}{subsection.3.2.49}
+\contentsline {subsection}{\numberline {3.2.50}int reqrvelocity}{27}{subsection.3.2.50}
+\contentsline {subsection}{\numberline {3.2.51}int reqlvelocity}{27}{subsection.3.2.51}
+\contentsline {subsection}{\numberline {3.2.52}bool streamingState}{27}{subsection.3.2.52}
+\contentsline {subsection}{\numberline {3.2.53}bool externalSensorsEnabled}{27}{subsection.3.2.53}
+\contentsline {subsection}{\numberline {3.2.54}t\_verbosity robotVerbosity}{27}{subsection.3.2.54}
+\contentsline {section}{\numberline {3.3}Funciones}{28}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Publicas}{28}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Create()}{28}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Create( std::string \_portName, t\_verbosity verbosityLevel )}{28}{subsubsection.3.3.1.2}
+\contentsline {subsubsection}{\numberline {3.3.1.3}\char 126Create()}{28}{subsubsection.3.3.1.3}
+\contentsline {subsubsection}{\numberline {3.3.1.4}std::string getPortName()}{28}{subsubsection.3.3.1.4}
+\contentsline {subsubsection}{\numberline {3.3.1.5}void start()}{28}{subsubsection.3.3.1.5}
+\contentsline {subsubsection}{\numberline {3.3.1.6}void baud(unsigned char baudRate)}{28}{subsubsection.3.3.1.6}
+\contentsline {subsubsection}{\numberline {3.3.1.7}void control()}{29}{subsubsection.3.3.1.7}
+\contentsline {subsubsection}{\numberline {3.3.1.8}void safe()}{29}{subsubsection.3.3.1.8}
+\contentsline {subsubsection}{\numberline {3.3.1.9}void full()}{29}{subsubsection.3.3.1.9}
+\contentsline {subsubsection}{\numberline {3.3.1.10}void spot()}{29}{subsubsection.3.3.1.10}
+\contentsline {subsubsection}{\numberline {3.3.1.11}void cover()}{29}{subsubsection.3.3.1.11}
+\contentsline {subsubsection}{\numberline {3.3.1.12}void coverAndDock()}{29}{subsubsection.3.3.1.12}
+\contentsline {subsubsection}{\numberline {3.3.1.13}void demo( unsigned char demo )}{29}{subsubsection.3.3.1.13}
+\contentsline {subsubsection}{\numberline {3.3.1.14}void drive( int velocity, int radius )}{30}{subsubsection.3.3.1.14}
+\contentsline {subsubsection}{\numberline {3.3.1.15}void driveDirect( int rightVelocity, int leftVelocity )}{30}{subsubsection.3.3.1.15}
+\contentsline {subsubsection}{\numberline {3.3.1.16}void leds( unsigned char bit,unsigned char color, unsigned char intensity )}{30}{subsubsection.3.3.1.16}
+\contentsline {subsubsection}{\numberline {3.3.1.17}void digitalOutputs(unsigned char outputBits)}{31}{subsubsection.3.3.1.17}
+\contentsline {subsubsection}{\numberline {3.3.1.18} void pwmLowSideDrivers( unsigned char dirver1, unsigned char driver1, unsigned char driver0)}{31}{subsubsection.3.3.1.18}
+\contentsline {subsubsection}{\numberline {3.3.1.19}void lowSideDrivers(unsigned char bits)}{31}{subsubsection.3.3.1.19}
+\contentsline {subsubsection}{\numberline {3.3.1.20}void sendIr(unsigned char byteValue)}{31}{subsubsection.3.3.1.20}
+\contentsline {subsubsection}{\numberline {3.3.1.21} void song(unsigned char,unsigned char,...)}{32}{subsubsection.3.3.1.21}
+\contentsline {subsubsection}{\numberline {3.3.1.22}void playSong(unsigned char songNumber)}{32}{subsubsection.3.3.1.22}
+\contentsline {subsubsection}{\numberline {3.3.1.23}int sensors(unsigned char idPacket)}{32}{subsubsection.3.3.1.23}
+\contentsline {subsubsection}{\numberline {3.3.1.24}int getSizePacket(int idPacket)}{32}{subsubsection.3.3.1.24}
+\contentsline {subsubsection}{\numberline {3.3.1.25}void stream(unsigned char* destinationBuffer,void* thread,int n,...)}{33}{subsubsection.3.3.1.25}
+\contentsline {subsubsection}{\numberline {3.3.1.26}void pauseResumeStream(bool streamState)}{33}{subsubsection.3.3.1.26}
+\contentsline {subsubsection}{\numberline {3.3.1.27}void script(unsigned char n,...);}{33}{subsubsection.3.3.1.27}
+\contentsline {subsubsection}{\numberline {3.3.1.28}void playScript()}{34}{subsubsection.3.3.1.28}
+\contentsline {subsubsection}{\numberline {3.3.1.29}void showScript()}{34}{subsubsection.3.3.1.29}
+\contentsline {subsubsection}{\numberline {3.3.1.30}void waitTime(unsigned char time)}{34}{subsubsection.3.3.1.30}
+\contentsline {subsubsection}{\numberline {3.3.1.31}void waitDistance(int distance)}{34}{subsubsection.3.3.1.31}
+\contentsline {subsubsection}{\numberline {3.3.1.32}void waitAngle(int angle)}{34}{subsubsection.3.3.1.32}
+\contentsline {subsubsection}{\numberline {3.3.1.33}void waitEvent(unsigned char event)}{35}{subsubsection.3.3.1.33}
+\contentsline {subsubsection}{\numberline {3.3.1.34}char* charMode(int mode)}{35}{subsubsection.3.3.1.34}
+\contentsline {subsubsection}{\numberline {3.3.1.35}int getBaudCode(int baudCode)}{35}{subsubsection.3.3.1.35}
+\contentsline {subsubsection}{\numberline {3.3.1.36}bool getBumpRight()}{35}{subsubsection.3.3.1.36}
+\contentsline {subsubsection}{\numberline {3.3.1.37}bool getBumpLeft()}{35}{subsubsection.3.3.1.37}
+\contentsline {subsubsection}{\numberline {3.3.1.38}bool getWheelDropRight()}{35}{subsubsection.3.3.1.38}
+\contentsline {subsubsection}{\numberline {3.3.1.39} bool getWheelDropLeft()}{36}{subsubsection.3.3.1.39}
+\contentsline {subsubsection}{\numberline {3.3.1.40}bool getWheelDropCaster()}{36}{subsubsection.3.3.1.40}
+\contentsline {subsubsection}{\numberline {3.3.1.41}bool getWallSeen()}{36}{subsubsection.3.3.1.41}
+\contentsline {subsubsection}{\numberline {3.3.1.42}bool getCliffLeft()}{36}{subsubsection.3.3.1.42}
+\contentsline {subsubsection}{\numberline {3.3.1.43}bool getCliffFrontLeft()}{36}{subsubsection.3.3.1.43}
+\contentsline {subsubsection}{\numberline {3.3.1.44}bool getCliffFrontRight()}{36}{subsubsection.3.3.1.44}
+\contentsline {subsubsection}{\numberline {3.3.1.45}bool getCliffRight()}{36}{subsubsection.3.3.1.45}
+\contentsline {subsubsection}{\numberline {3.3.1.46}bool getVirtualWall()}{37}{subsubsection.3.3.1.46}
+\contentsline {subsubsection}{\numberline {3.3.1.47}bool getLd0()}{37}{subsubsection.3.3.1.47}
+\contentsline {subsubsection}{\numberline {3.3.1.48}bool getLd1()}{37}{subsubsection.3.3.1.48}
+\contentsline {subsubsection}{\numberline {3.3.1.49}bool getLd2()}{37}{subsubsection.3.3.1.49}
+\contentsline {subsubsection}{\numberline {3.3.1.50}bool getRightWheel()}{37}{subsubsection.3.3.1.50}
+\contentsline {subsubsection}{\numberline {3.3.1.51} bool getLeftWheel()}{37}{subsubsection.3.3.1.51}
+\contentsline {subsubsection}{\numberline {3.3.1.52}unsigned char getInfraredByte()}{37}{subsubsection.3.3.1.52}
+\contentsline {subsubsection}{\numberline {3.3.1.53}bool getAdvanceBtn()}{38}{subsubsection.3.3.1.53}
+\contentsline {subsubsection}{\numberline {3.3.1.54}bool getPlayBtn()}{38}{subsubsection.3.3.1.54}
+\contentsline {subsubsection}{\numberline {3.3.1.55}int getDistance()}{38}{subsubsection.3.3.1.55}
+\contentsline {subsubsection}{\numberline {3.3.1.56}int getAngle()}{38}{subsubsection.3.3.1.56}
+\contentsline {subsubsection}{\numberline {3.3.1.57}unsigned char getChargingState()}{38}{subsubsection.3.3.1.57}
+\contentsline {subsubsection}{\numberline {3.3.1.58}int getVoltage()}{39}{subsubsection.3.3.1.58}
+\contentsline {subsubsection}{\numberline {3.3.1.59}int getCurrent()}{39}{subsubsection.3.3.1.59}
+\contentsline {subsubsection}{\numberline {3.3.1.60}unsigned char getBatteryTemperature()}{39}{subsubsection.3.3.1.60}
+\contentsline {subsubsection}{\numberline {3.3.1.61}int getBatteryCharge()}{39}{subsubsection.3.3.1.61}
+\contentsline {subsubsection}{\numberline {3.3.1.62}int getBatteryCapacity()}{39}{subsubsection.3.3.1.62}
+\contentsline {subsubsection}{\numberline {3.3.1.63}int getWallSignal()}{39}{subsubsection.3.3.1.63}
+\contentsline {subsubsection}{\numberline {3.3.1.64}int getCliffLS()}{39}{subsubsection.3.3.1.64}
+\contentsline {subsubsection}{\numberline {3.3.1.65}int getCliffFLS()}{40}{subsubsection.3.3.1.65}
+\contentsline {subsubsection}{\numberline {3.3.1.66}int getCliffFRS()}{40}{subsubsection.3.3.1.66}
+\contentsline {subsubsection}{\numberline {3.3.1.67}int getCliffRS()}{40}{subsubsection.3.3.1.67}
+\contentsline {subsubsection}{\numberline {3.3.1.68} bool getDigitalInput0()}{40}{subsubsection.3.3.1.68}
+\contentsline {subsubsection}{\numberline {3.3.1.69}bool getDigitalInput1()}{40}{subsubsection.3.3.1.69}
+\contentsline {subsubsection}{\numberline {3.3.1.70}bool getDigitalInput2()}{40}{subsubsection.3.3.1.70}
+\contentsline {subsubsection}{\numberline {3.3.1.71}bool getDigitalInput3()}{41}{subsubsection.3.3.1.71}
+\contentsline {subsubsection}{\numberline {3.3.1.72}bool getBaudRateChange()}{41}{subsubsection.3.3.1.72}
+\contentsline {subsubsection}{\numberline {3.3.1.73}int getCargoAnalogSignal()}{41}{subsubsection.3.3.1.73}
+\contentsline {subsubsection}{\numberline {3.3.1.74}bool getHomeBase()}{41}{subsubsection.3.3.1.74}
+\contentsline {subsubsection}{\numberline {3.3.1.75}bool getInternalCharger()}{41}{subsubsection.3.3.1.75}
+\contentsline {subsubsection}{\numberline {3.3.1.76}unsigned char getOIMode()}{41}{subsubsection.3.3.1.76}
+\contentsline {subsubsection}{\numberline {3.3.1.77}unsigned char getSongNumber()}{42}{subsubsection.3.3.1.77}
+\contentsline {subsubsection}{\numberline {3.3.1.78}bool getSongPlaying()}{42}{subsubsection.3.3.1.78}
+\contentsline {subsubsection}{\numberline {3.3.1.79}unsigned char getStreamPackets()}{42}{subsubsection.3.3.1.79}
+\contentsline {subsubsection}{\numberline {3.3.1.80}int getRequestedVelocity()}{42}{subsubsection.3.3.1.80}
+\contentsline {subsubsection}{\numberline {3.3.1.81}int getRequestedRadius()}{42}{subsubsection.3.3.1.81}
+\contentsline {subsubsection}{\numberline {3.3.1.82}int getRequestedRVelocity()}{42}{subsubsection.3.3.1.82}
+\contentsline {subsubsection}{\numberline {3.3.1.83}int getRequestedLVelocity()}{42}{subsubsection.3.3.1.83}
+\contentsline {subsubsection}{\numberline {3.3.1.84}bool getStreamingState()}{43}{subsubsection.3.3.1.84}
+\contentsline {subsubsection}{\numberline {3.3.1.85}void getExternalSensors(int[NUMBER\_OF\_SENSORS] sensors)}{43}{subsubsection.3.3.1.85}
+\contentsline {subsubsection}{\numberline {3.3.1.86}bool getExternalSensorsEnabledStatus()}{43}{subsubsection.3.3.1.86}
+\contentsline {subsubsection}{\numberline {3.3.1.87}void setVerbosity(t\_verbosity)}{43}{subsubsection.3.3.1.87}
+\contentsline {subsubsection}{\numberline {3.3.1.88}int getExternalNthSensor(int n)}{43}{subsubsection.3.3.1.88}
+\contentsline {subsubsection}{\numberline {3.3.1.89}int toLittleEndian(unsigned char* source,int nbytes,int* destination,boolSigned sign)}{44}{subsubsection.3.3.1.89}
+\contentsline {subsection}{\numberline {3.3.2}Privadas}{44}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}void error(int error,void* info)}{44}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}void printRobotMessage(const char* message,...)}{44}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}int readBumpsAndWheelDrops(unsigned char *data)}{44}{subsubsection.3.3.2.3}
+\contentsline {subsubsection}{\numberline {3.3.2.4}int readWall(unsigned char *data)}{45}{subsubsection.3.3.2.4}
+\contentsline {subsubsection}{\numberline {3.3.2.5}int readCliffLeft(unsigned char *data)}{45}{subsubsection.3.3.2.5}
+\contentsline {subsubsection}{\numberline {3.3.2.6}int readCliffFrontLeft(unsigned char *data)}{45}{subsubsection.3.3.2.6}
+\contentsline {subsubsection}{\numberline {3.3.2.7}int readCliffFrontRight(unsigned char *data)}{45}{subsubsection.3.3.2.7}
+\contentsline {subsubsection}{\numberline {3.3.2.8}int readCliffRight(unsigned char *data)}{45}{subsubsection.3.3.2.8}
+\contentsline {subsubsection}{\numberline {3.3.2.9}int readVirtualWall(unsigned char *data)}{46}{subsubsection.3.3.2.9}
+\contentsline {subsubsection}{\numberline {3.3.2.10}int readLSDriverAndWheelO(unsigned char *data)}{46}{subsubsection.3.3.2.10}
+\contentsline {subsubsection}{\numberline {3.3.2.11}int readInfraredByte(unsigned char *data)}{46}{subsubsection.3.3.2.11}
+\contentsline {subsubsection}{\numberline {3.3.2.12}int readButtons(unsigned char *data)}{46}{subsubsection.3.3.2.12}
+\contentsline {subsubsection}{\numberline {3.3.2.13}int readDistance(unsigned char *data)}{47}{subsubsection.3.3.2.13}
+\contentsline {subsubsection}{\numberline {3.3.2.14}int readAngle(unsigned char *data)}{47}{subsubsection.3.3.2.14}
+\contentsline {subsubsection}{\numberline {3.3.2.15}int readChargingState(unsigned char *data)}{47}{subsubsection.3.3.2.15}
+\contentsline {subsubsection}{\numberline {3.3.2.16}int readVoltage(unsigned char *data)}{47}{subsubsection.3.3.2.16}
+\contentsline {subsubsection}{\numberline {3.3.2.17}int readCurrent(unsigned char *data)}{47}{subsubsection.3.3.2.17}
+\contentsline {subsubsection}{\numberline {3.3.2.18}int readBatteryTemperature(unsigned char *data)}{48}{subsubsection.3.3.2.18}
+\contentsline {subsubsection}{\numberline {3.3.2.19}int readBatteryCharge(unsigned char *data)}{48}{subsubsection.3.3.2.19}
+\contentsline {subsubsection}{\numberline {3.3.2.20}int readWallSignal(unsigned char *data)}{48}{subsubsection.3.3.2.20}
+\contentsline {subsubsection}{\numberline {3.3.2.21}int readCliffLS(unsigned char *)data}{48}{subsubsection.3.3.2.21}
+\contentsline {subsubsection}{\numberline {3.3.2.22}int readCliffFLS(unsigned char *data)}{49}{subsubsection.3.3.2.22}
+\contentsline {subsubsection}{\numberline {3.3.2.23}int readCliffFRS(unsigned char *data)}{49}{subsubsection.3.3.2.23}
+\contentsline {subsubsection}{\numberline {3.3.2.24}int readCliffRS(unsigned char *data)}{49}{subsubsection.3.3.2.24}
+\contentsline {subsubsection}{\numberline {3.3.2.25}int readDigitalInputs(unsigned char *data)}{49}{subsubsection.3.3.2.25}
+\contentsline {subsubsection}{\numberline {3.3.2.26}int readCargoAnalogSignal(unsigned char *data)}{49}{subsubsection.3.3.2.26}
+\contentsline {subsubsection}{\numberline {3.3.2.27}int readChargingSources(unsigned char *data)}{50}{subsubsection.3.3.2.27}
+\contentsline {subsubsection}{\numberline {3.3.2.28}int readOIMode(unsigned char *data)}{50}{subsubsection.3.3.2.28}
+\contentsline {subsubsection}{\numberline {3.3.2.29}int readSongNumber(unsigned char *data)}{50}{subsubsection.3.3.2.29}
+\contentsline {subsubsection}{\numberline {3.3.2.30}int readSongPlaying(unsigned char *data)}{50}{subsubsection.3.3.2.30}
+\contentsline {subsubsection}{\numberline {3.3.2.31}int readStreamPackets(unsigned char *data)}{51}{subsubsection.3.3.2.31}
+\contentsline {subsubsection}{\numberline {3.3.2.32}int readReqVelocity(unsigned char *data)}{51}{subsubsection.3.3.2.32}
+\contentsline {subsubsection}{\numberline {3.3.2.33}int readReqRadius(unsigned char *data)}{51}{subsubsection.3.3.2.33}
+\contentsline {subsubsection}{\numberline {3.3.2.34}int readReqRVelocity(unsigned char *data)}{51}{subsubsection.3.3.2.34}
+\contentsline {subsubsection}{\numberline {3.3.2.35}int readReqLVelocity(unsigned char *data)}{51}{subsubsection.3.3.2.35}
+\contentsline {subsubsection}{\numberline {3.3.2.36}int updateSensor(unsigned char packetID, int size)}{52}{subsubsection.3.3.2.36}
+\contentsline {subsubsection}{\numberline {3.3.2.37}void commonInitializationProcedures(string port,bool auto)}{52}{subsubsection.3.3.2.37}
+\contentsline {subsubsection}{\numberline {3.3.2.38}int16 toInt16(int integer)}{52}{subsubsection.3.3.2.38}
+\contentsline {chapter}{\numberline {4}Code Samples}{53}{chapter.4}

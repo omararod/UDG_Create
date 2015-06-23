@@ -1,0 +1,1527 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.9)  7 FEB 2015 16:09
+entering extended mode
+**UDG_Create_User_Guide.tex
+(C:\Users\omar\Documents\GitHub\UDG_Create\docs\UDG_Create_User_Guide.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk10.clo"
+File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\lst@mode=\count88
+\lst@gtempboxa=\box26
+\lst@token=\toks15
+\lst@length=\count89
+\lst@currlwidth=\dimen103
+\lst@column=\count90
+\lst@pos=\count91
+\lst@lostspace=\dimen104
+\lst@width=\dimen105
+\lst@newlines=\count92
+\lst@lineno=\count93
+\lst@maxwidth=\dimen106
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count94
+\lst@skipnumbers=\count95
+\lst@framebox=\box27
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2013/08/26 1.5b listings configuration
+))
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2013/08/26 1.5b listings language file
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2013/08/26 1.5b listings language file
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count96
+))
+\Gin@req@height=\dimen107
+\Gin@req@width=\dimen108
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen109
+\Hy@linkcounter=\count97
+\Hy@pagecounter=\count98
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count99
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count100
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen110
+\Fld@menulength=\count101
+\Field@Width=\dimen111
+\Fld@charsize=\dimen112
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count102
+\c@Item=\count103
+\c@Hfootnote=\count104
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count105
+\c@bookmark@seq@number=\count106
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip43
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2008/07/08 v3.8m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\spanish.ldf"
+Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count107
+\U@D=\dimen113
+)
+\es@datefmt=\count108
+\es@quottoks=\toks16
+\es@quotdepth=\count109
+Package babel Info: Making " an active character on input line 492.
+Package babel Info: Making . an active character on input line 585.
+Package babel Info: Making < an active character on input line 630.
+Package babel Info: Making > an active character on input line 630.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ucs\utf8x.def"
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ucs\ucs.sty"
+Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ucs\uni-global.def"
+File: uni-global.def 2013/05/13 UCS: Unicode global data
+)
+\uc@secondtry=\count110
+\uc@combtoks=\toks19
+\uc@combtoksb=\toks20
+\uc@temptokena=\toks21
+)
+(C:\Users\omar\Documents\GitHub\UDG_Create\docs\UDG_Create_User_Guide.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+\c@lstlisting=\count111
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count112
+\scratchdimen=\dimen114
+\scratchbox=\box28
+\nofMPsegments=\count113
+\nofMParguments=\count114
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen115
+\MPnumerator=\count116
+\makeMPintoPDFobject=\count117
+\everyMPtoPDFconversion=\toks23
+)
+\AtBeginShipoutBox=\box29
+Package hyperref Info: Link coloring OFF on input line 17.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count118
+)
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
+
+(C:\Users\omar\Documents\GitHub\UDG_Create\docs\UDG_Create_User_Guide.out)
+(C:\Users\omar\Documents\GitHub\UDG_Create\docs\UDG_Create_User_Guide.out)
+\@outlinefile=\write3
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 21.
+ [1
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
+
+]
+(C:\Users\omar\Documents\GitHub\UDG_Create\docs\UDG_Create_User_Guide.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+
+[3] [4]
+Overfull \hbox (13.27856pt too wide) in paragraph at lines 106--106
+ [][] [][]\OT1/cmr/m/n/10 void stream(unsigned char* des-ti-na-tion-Buf-fer,voi
+d* 
+ []
+
+[5]
+Overfull \hbox (29.83972pt too wide) in paragraph at lines 166--166
+ [][] [][]\OT1/cmr/m/n/10 void ge-tEx-ter-nal-Sen-sors(int[NUMBER[]OF[]SENSORS]
+ 
+ []
+
+[6]
+Overfull \hbox (3.61182pt too wide) in paragraph at lines 170--170
+ [][] [][]\OT1/cmr/m/n/10 int to-LittleEn-dian(unsigned char* sour-ce,int nby- 
+
+ []
+
+
+Overfull \hbox (11.47295pt too wide) in paragraph at lines 174--174
+ [][] [][]\OT1/cmr/m/n/10 int read-Bum-psAndW-heel-Drops(unsigned char *da- 
+ []
+
+
+Overfull \hbox (2.22292pt too wide) in paragraph at lines 181--181
+ [][] [][]\OT1/cmr/m/n/10 int readLS-Dri-ve-rAndW-hee-lO(unsigned char *da- 
+ []
+
+
+Overfull \hbox (24.36197pt too wide) in paragraph at lines 208--208
+ [][] [][]\OT1/cmr/m/n/10 void com-mo-nI-ni-tia-li-za-tion-Pro-ce-du-res(string
+ port,bool 
+ []
+
+[7])
+\tf@toc=\write4
+ [8]
+Cap\'{\i }tulo 1.
+[9
+
+] [10
+
+]
+Cap\'{\i }tulo 2.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 32.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
+
+<figures/cargo.jpg, id=1108, 6937.92pt x 2312.64pt>
+File: figures/cargo.jpg Graphic file (type jpg)
+ <use figures/cargo.jpg>
+Package pdftex.def Info: figures/cargo.jpg used on input line 35.
+(pdftex.def)             Requested size: 276.00105pt x 91.9958pt.
+
+<figures/usbcable.jpg, id=1110, 6937.92pt x 2312.64pt>
+File: figures/usbcable.jpg Graphic file (type jpg)
+
+<use figures/usbcable.jpg>
+Package pdftex.def Info: figures/usbcable.jpg used on input line 44.
+(pdftex.def)             Requested size: 276.00105pt x 91.9958pt.
+
+<figures/serialcable.jpg, id=1112, 6937.92pt x 2312.64pt>
+File: figures/serialcable.jpg Graphic file (type jpg)
+
+<use figures/serialcable.jpg>
+Package pdftex.def Info: figures/serialcable.jpg used on input line 53.
+(pdftex.def)             Requested size: 276.00105pt x 91.9958pt.
+
+<figures/cables.jpg, id=1115, 2400.97pt x 1879.02pt>
+File: figures/cables.jpg Graphic file (type jpg)
+ <use figures/cables.jpg>
+Package pdftex.def Info: figures/cables.jpg used on input line 62.
+(pdftex.def)             Requested size: 276.00105pt x 215.9824pt.
+
+<figures/sensors.jpg, id=1116, 3468.96pt x 2312.64pt>
+File: figures/sensors.jpg Graphic file (type jpg)
+
+<use figures/sensors.jpg>
+Package pdftex.def Info: figures/sensors.jpg used on input line 70.
+(pdftex.def)             Requested size: 276.00105pt x 183.99162pt.
+
+<figures/computerCables.jpg, id=1118, 3468.96pt x 2312.64pt>
+File: figures/computerCables.jpg Graphic file (type jpg)
+
+<use figures/computerCables.jpg>
+Package pdftex.def Info: figures/computerCables.jpg used on input line 79.
+(pdftex.def)             Requested size: 276.00105pt x 183.99162pt.
+
+<figures/usage.jpg, id=1120, 6937.92pt x 2312.64pt>
+File: figures/usage.jpg Graphic file (type jpg)
+ <use figures/usage.jpg>
+Package pdftex.def Info: figures/usage.jpg used on input line 88.
+(pdftex.def)             Requested size: 276.00105pt x 91.9958pt.
+
+Overfull \hbox (17.64218pt too wide) in paragraph at lines 31--94
+[]\OT1/cmr/m/n/10 Para la co-rrec-ta eje-cu-cion de los pro-gra-mas crea-dos c
+on la bi-blio-te-ca UDG[]Create
+ []
+
+[11 <C:/Users/omar/Documents/GitHub/UDG_Create/docs/figures/cargo.jpg>]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 98.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 98.
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--109
+
+ []
+
+[12 <C:/Users/omar/Documents/GitHub/UDG_Create/docs/figures/usbcable.jpg> <C:/U
+sers/omar/Documents/GitHub/UDG_Create/docs/figures/serialcable.jpg>] [13 <C:/Us
+ers/omar/Documents/GitHub/UDG_Create/docs/figures/cables.jpg> <C:/Users/omar/Do
+cuments/GitHub/UDG_Create/docs/figures/sensors.jpg>] [14 <C:/Users/omar/Documen
+ts/GitHub/UDG_Create/docs/figures/computerCables.jpg> <C:/Users/omar/Documents/
+GitHub/UDG_Create/docs/figures/usage.jpg>]
+Overfull \hbox (20.3102pt too wide) in paragraph at lines 110--113
+\OT1/cmr/m/n/10 Asegurese de que su pro-gra-ma in-clu-ya a la bi-blio-te-ca co-
+mo \OT1/cmr/m/it/10 #in-clu-de ``UDG[]Create.h''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--113
+
+ []
+
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 118.
+
+Overfull \hbox (14.15335pt too wide) in paragraph at lines 129--129
+[]\OT1/cmr/bx/n/14.4 Uso de UDG[]Create co-mo bi-blio-te-ca estandar 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--134
+
+ []
+
+[15]
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 135.
+ [16]
+Cap\'{\i }tulo 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--166
+
+ []
+
+[17
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 167--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--215
+
+ []
+
+[18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 247--251
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+
+ []
+
+[20] [21] [22] [23]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 335.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 339.
+
+[24] [25] [26] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 394--399
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 400.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--402
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--408
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--412
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--412
+
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 413--415
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--418
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--427
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--434
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 434--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--443
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--443
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--454
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--454
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--461
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--461
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--461
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--466
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--466
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--468
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 469--472
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--476
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--476
+
+ []
+
+[31]
+Overfull \hbox (46.49763pt too wide) in paragraph at lines 480--482
+[]\OT1/cmr/m/it/10 song(numeroDeCancion,numeroDeNotas, no-ta1,duracion1, no-ta2
+, du-ra-cion2,...,notaN,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--482
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--486
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--486
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--494
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--494
+
+ []
+
+
+Overfull \hbox (16.29387pt too wide) in paragraph at lines 495--495
+[]\OT1/cmr/bx/n/10 void stream(unsigned char* des-ti-na-tion-Buf-fer,void* th-r
+ead,int
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--500
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--500
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 501--502
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 505--506
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--514
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 517--519
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 520--522
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--526
+
+ []
+
+
+Overfull \hbox (2.58394pt too wide) in paragraph at lines 523--526
+\OT1/cmr/m/n/10 Instruye al ro-bot pa-ra es-pe-rar el tiem-po es-pe-ci-fi-ca-do
+ du-ran-te el cual no podra mo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--529
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--529
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--535
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 536--539
+
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 540--543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--546
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 547--549
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--551
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 551--553
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 553--555
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 555--557
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--559
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 559--561
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--563
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--565
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--567
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--569
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 569--571
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 571--573
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--575
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--578
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--580
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--582
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--584
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 584--586
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 586--588
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 588--590
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 591--599
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--602
+
+ []
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 602--604
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 605--607
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--609
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--611
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 611--613
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 613--615
+
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 615--617
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--619
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 619--621
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 621--623
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 623--625
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 625--627
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 627--629
+
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 629--631
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--633
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 633--635
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--637
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 637--643
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 643--645
+
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 645--647
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 647--649
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 649--651
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 651--653
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 653--655
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 655--657
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 657--659
+
+ []
+
+[42]
+Overfull \hbox (5.48932pt too wide) in paragraph at lines 659--659
+[]\OT1/cmr/bx/n/10 void ge-tEx-ter-nal-Sen-sors(int[NUMBER[]OF[]SENSORS] sen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--662
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--662
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 662--664
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 664--669
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 664--669
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 670--673
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 670--673
+
+ []
+
+
+Overfull \hbox (7.74669pt too wide) in paragraph at lines 674--674
+[]\OT1/cmr/bx/n/10 int to-LittleEn-dian(unsigned char* sour-ce,int nby-tes,int*
+ des-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 674--680
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 682--686
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 682--686
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--693
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--693
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--697
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--697
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 698--701
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 698--701
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 702--705
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 702--705
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 706--709
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 706--709
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 710--713
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 710--713
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 714--717
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 714--717
+
+ []
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 718--721
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 718--721
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 722--725
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 722--725
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 726--729
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 730--733
+
+ []
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 734--737
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 734--737
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 738--741
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 738--741
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--745
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--745
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 746--749
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 746--749
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 750--753
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 750--753
+
+ []
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 754--757
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 754--757
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 758--761
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 758--761
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 762--765
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 762--765
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 766--769
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 766--769
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 770--773
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 770--773
+
+ []
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 774--777
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 774--777
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 778--781
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 782--785
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 782--785
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 786--789
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 786--789
+
+ []
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 790--793
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--793
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 794--797
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 798--801
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 798--801
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 802--805
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 802--805
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 806--809
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 806--809
+
+ []
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 810--813
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 810--813
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 814--817
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 814--817
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--821
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--821
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--825
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--825
+
+ []
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 826--830
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--830
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 831--835
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 836--839
+
+ []
+
+[52]
+Cap\'{\i }tulo 4.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 845.
+[53
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 845.
+ (C:\Users\omar\Documents\GitHub\UDG_Create\docs\UDG_Create_User_Guide.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 845.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 845.
+Package rerunfilecheck Info: File `UDG_Create_User_Guide.out' has not changed.
+(rerunfilecheck)             Checksum: 21C4838EE74961A62B9149514C33D96B;18554.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 845.
+ ) 
+Here is how much of TeX's memory you used:
+ 8699 strings out of 493921
+ 126353 string characters out of 3144880
+ 210931 words of memory out of 3000000
+ 11623 multiletter control sequences out of 15000+200000
+ 9806 words of font info for 34 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 33i,11n,58p,559b,1784s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on UDG_Create_User_Guide.pdf (53 pages, 6589063 bytes).
+PDF statistics:
+ 1451 PDF objects out of 1728 (max. 8388607)
+ 295 named destinations out of 1000 (max. 500000)
+ 1708 words of extra memory for PDF output out of 10000 (max. 10000000)
+
