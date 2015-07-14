@@ -1,8 +1,11 @@
 /*This is the host side for the microcontroller's USB firmware
-This file is loosely based on "USB and PIC: quick guide to an USB HID framework"
+The linux part of this file is loosely based on "USB and PIC: quick guide to an USB HID framework"
 by Alberto Maccioni, available at http://openprog.altervista.org/USB_firm_eng.html
 */
-#include <stdio.h>
+
+#include "USBLayer.h"
+#define SLEEP_MILISECONDS 100
+#ifdef __linux
 #include <stdlib.h>
 #include <sys/ioctl.h>
 #include <linux/hiddev.h>
@@ -10,11 +13,11 @@ by Alberto Maccioni, available at http://openprog.altervista.org/USB_firm_eng.ht
 #include <unistd.h>
 #include <ctype.h>
 #include <fcntl.h>
-#include "USBLayer.h"
+
 
 #define BUFFER_SIZE 64
 #define REPORT_SIZE 64
-#define SLEEP_MILISECONDS 100
+
 
 int fd = -1;
 char devicePath[256];
@@ -30,11 +33,22 @@ struct hiddev_usage_ref_multi outUsage;
 
 struct hiddev_devinfo deviceInfo;
 
+#else
+//Global declarations
+HANDLE USBWriteHandle = INVALID_HANDLE_VALUE;
+HANDLE USBReadHandle = INVALID_HANDLE_VALUE;
+// GUID for HID class
+GUID HIDClassGuid = { 0x4d1e55b2, 0xf16f, 0x11cf, 0x88, 0xcb, 0x00, 0x11, 0x11, 0x00, 0x00, 0x30 };
+
+#endif
+
 t_verbosity USBVerbosity = VERBOSITY_NORMAL;
 
 //this  section has to be re-implemented for windows***********************************************
 int initializeUSB(int VID, int PID)
-{	
+{
+
+#ifdef __linux
 	int i;
 	int MAX_DESCRIPTORS = 50;
 	printUSBMessage("Searching Create's Sensors USB Interface (VID 0x%04X and PID 0x%04X)\n",VID, PID);
@@ -47,7 +61,7 @@ int initializeUSB(int VID, int PID)
 			ioctl(fd, HIDIOCGDEVINFO, &deviceInfo);
 			if(deviceInfo.vendor == VID && deviceInfo.product == PID)
 			{
-				printf("Device found: %s\n",devicePath);
+				printUSBMessage("Device found: %s\n",devicePath);
 				break;
 			}
 		}
@@ -58,15 +72,113 @@ int initializeUSB(int VID, int PID)
 		printUSBMessage("USB sensors not found!\n");
 		return -1;
 	}
+#else
+	//register for WM_DEVICECHANGE message
+	DEV_BROADCAST_DEVICEINTERFACE broadcastDescriptor;
+	broadcastDescriptor.dbcc_size = sizeof(DEV_BROADCAST_DEVICEINTERFACE);
+	broadcastDescriptor.dbcc_devicetype = DBT_DEVTYP_DEVICEINTERFACE;
+	broadcastDescriptor.dbcc_reserved = 0;
+	broadcastDescriptor.dbcc_classguid = HIDClassGuid;
 
+	RegisterDeviceNotification(NULL, &broadcastDescriptor, DEVICE_NOTIFY_WINDOW_HANDLE);
+
+
+	//local declarations
+	SP_DEVICE_INTERFACE_DATA deviceData;
+	SP_DEVINFO_DATA deviceInfo;
+	PSP_DEVICE_INTERFACE_DETAIL_DATA deviceInterfaceDetail;
+	unsigned int index = 0;
+	unsigned int lastError;
+	DWORD registryType = 0;
+	DWORD registrySize = 0;
+	DWORD registrySize2 = 0;
+	DWORD interfaceInfoSize;
+	byte* buffer;
+	wchar_t tempString[512];
+
+	//Enumerate devices from HID class
+	//DIGCF_PRESENT Return only devices that are currently present in a system.
+	//DIGCF_DEVICEINTERFACEReturn devices that support device interfaces for the specified device interface classes
+	HDEVINFO deviceTable = SetupDiGetClassDevs(&HIDClassGuid, NULL, NULL, DIGCF_PRESENT | DIGCF_DEVICEINTERFACE);
+	if (deviceTable == INVALID_HANDLE_VALUE)
+	{
+		printUSBMessage("Error while filling device table  from SetupDiGetClassDevs()\n");
+		return -1;
+	}
+
+	deviceData.cbSize = sizeof(SP_DEVICE_INTERFACE_DATA);
+	//look through the list for the device. We assume there will not be more than 1000 devices.
+	while (index < 1000)
+	{
+		if (!SetupDiEnumDeviceInterfaces(deviceTable, NULL, &HIDClassGuid, index, &deviceData))
+		{
+			lastError = GetLastError();
+			if (lastError == ERROR_NO_MORE_ITEMS)
+			{
+				SetupDiDestroyDeviceInfoList(&deviceTable);
+				break;
+			}
+			else
+			{
+				SetupDiDestroyDeviceInfoList(&deviceTable);
+				printUSBMessage("something went wrong when looking for the device\n");
+				return -1;
+			}
+		}
+		//get device info ID string
+		deviceInfo.cbSize = sizeof(SP_DEVINFO_DATA);
+		SetupDiEnumDeviceInfo(deviceTable, index, &deviceInfo);
+		//we call this function twice, one to get the necessary buffer size and the second to get the actual ID info
+		SetupDiGetDeviceRegistryProperty(deviceTable, &deviceInfo, SPDRP_HARDWAREID, &registryType, NULL, 0, &registrySize);
+		buffer = new byte[registrySize];
+		SetupDiGetDeviceRegistryProperty(deviceTable, &deviceInfo, SPDRP_HARDWAREID, &registryType, buffer, registrySize, &registrySize2);
+		lstrcpy(tempString, (LPCWSTR)buffer);
+		free(buffer);
+		//we use substring because the device is actually enumerated as HID\\VID_04D8&PID_003F&REV_XXXX
+		if (lstrcmp(wstring(tempString).substr(0, 21).c_str(), VID_PID) == 0)
+		{ //device is "HID\\VID_04D8&PID_003F"
+
+			//We also call this function twice, first to get the size and then the actual info
+			SetupDiGetDeviceInterfaceDetail(deviceTable, &deviceData, NULL, 0, &interfaceInfoSize, NULL);
+
+			deviceInterfaceDetail = (PSP_DEVICE_INTERFACE_DETAIL_DATA)malloc(interfaceInfoSize);
+			if (deviceInterfaceDetail)
+			{
+				deviceInterfaceDetail->cbSize = sizeof(SP_DEVICE_INTERFACE_DETAIL_DATA);
+				ZeroMemory(deviceInterfaceDetail->DevicePath, sizeof(deviceInterfaceDetail->DevicePath));
+			}
+			if (SetupDiGetDeviceInterfaceDetail(deviceTable, &deviceData, deviceInterfaceDetail, interfaceInfoSize, NULL, NULL))
+			{
+				SetupDiDestroyDeviceInfoList(deviceTable);
+				USBReadHandle = CreateFile(deviceInterfaceDetail->DevicePath, GENERIC_READ, FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING, 0, NULL);
+				if (USBReadHandle == INVALID_HANDLE_VALUE)
+				{
+					printUSBMessage("Error opening usb reading handle. Closing...\n");
+					return -1;
+				}
+				USBWriteHandle = CreateFile(deviceInterfaceDetail->DevicePath, GENERIC_WRITE, FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING, 0, NULL);
+				if (!USBWriteHandle || USBWriteHandle == INVALID_HANDLE_VALUE)
+				{
+					printUSBMessage("Error opening usb write handle. Closing...\n");
+					return -1;
+				}
+
+				break;
+			}
+		}
+		index++;
+	}
+
+#endif
 	
 	
 	
-	
+	return 1;
 }
 
 void GetUSBData(unsigned char* destinationBuffer)
 {	
+#ifdef __linux
 	//Lots of info about the next part here http://www.wetlogic.net/hiddev/
 	
 	//Now that usb port is open, this is the actual initialization
@@ -119,12 +231,39 @@ void GetUSBData(unsigned char* destinationBuffer)
 
 	//printf("--%X--",destinationBuffer[28]);
 
+#else
+	byte buffer[65];
+	DWORD bytesWritten;
+	buffer[0] = 0x0;  //read sensors
+	buffer[1] = 0x37;  //read sensors
+	WriteFile(USBWriteHandle, buffer, 65, &bytesWritten, NULL);
+	//if no bytes were written then something went wrong
+	if (bytesWritten <= 0)
+		printUSBMessage("Error writing to USB\n");
+
+	Sleep(SLEEP_MILISECONDS);
+
+	DWORD readBytes;
+	ReadFile(USBReadHandle, destinationBuffer, 65, &readBytes, NULL);
+	//if no bytes were read then something went wrong
+	if (readBytes <= 0)
+		printUSBMessage("Error reading from USB\n");
+
+#endif
+
 	
 }
 
 void CloseUSB()
 {
+#ifdef __linux
 	close(fd);
+#else
+	if (USBWriteHandle)
+	CloseHandle(USBWriteHandle);
+	if (USBReadHandle)
+	CloseHandle(USBReadHandle);
+#endif
 }
 
 //*************************************************************************************************************

@@ -21,14 +21,26 @@ bool InitializeSensors(int vid,int pid)
 void GetSensors(int destinationArray[NUMBER_OF_SENSORS])
 {
 	unsigned char buffer[65];
+#ifndef __linux
+
+#endif
 	GetUSBData(buffer);
 	int j=0;
-	for(int i=1 ; i<27;i+=2)
+#ifndef __linux
+	for(int i=2 ; i<28;i+=2)
+#else
+	for (int i = 1; i<27; i += 2)
+#endif
 	{
 		destinationArray[j]=(buffer[i+1]<<8)+buffer[i];
 		j++;
 	}
-	destinationArray[13] =  (int)buffer[27]; 
+	destinationArray[13] =  
+#ifndef __linux
+		(int)buffer[28];
+#else
+		(int)buffer[27];
+#endif
 }
 
 int GetNthSensor(int n)

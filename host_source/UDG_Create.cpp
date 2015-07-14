@@ -2,18 +2,36 @@
 #include<thread>
 #include "ExternalSensors.h"
 #include "SerialPort.h"
+#ifndef __linux
+#include <Windows.h>
+#undef ConfigurePort
+#endif
 
 using namespace std;
+//sleep for x milliseconds, this function is suposed to be cross-platform
+void SleepMS(int x)
+{
+#ifdef __linux
+	usleep(x * 100);
+#else
+	Sleep(x);
+#endif
+}
 
 
 //************NOT PART OF CREATE CLASS***************************************
 //This function will save the numberOfBytes bytes in buffer when requested
 //It's the user's responsability to give the proper interpretation to the raw data
+#ifdef __linux
 void ThreadedReadStream(int portDescriptor,Create* r,unsigned char*buffer,int numberOfBytes)
+#else
+void ThreadedReadStream(HANDLE portDescriptor, Create* r, unsigned char*buffer, int numberOfBytes)
+#endif
 {
 	while(r->getStreamingState())
 	{
-		usleep(15000);
+		//usleep(15000);
+		SleepMS(15);
 		ReadFromSerial(portDescriptor,buffer,numberOfBytes);
 	}
 }
@@ -36,6 +54,12 @@ Create::Create()
 	commonInitializationProcedures(string("nothing"),true);
 }
 
+Create::Create(string _portName)
+{
+	setVerbosity(VERBOSITY_NORMAL);
+	portName = _portName;
+	commonInitializationProcedures(_portName, false);
+}
 Create::Create(string _portName, t_verbosity level)
 {
 	setVerbosity(level);	
@@ -55,9 +79,17 @@ void Create::commonInitializationProcedures(string _portName,bool automaticIniti
 	else
 	{
 		portName = _portName;
+#ifndef __linux
+		wstring aux;
+		aux.assign(portName.begin(), portName.end());
+		portDescriptor = OpenPort((LPWSTR)aux.c_str());
+#else
 		portDescriptor = OpenPort(portName.c_str());
+#endif
 	}
+#ifdef __linux
 	ConfigurePort(portDescriptor);
+#endif
 	streamingState = false;
 	externalSensorsEnabled = InitializeSensors(); //<--- USB
 	if(!externalSensorsEnabled)
@@ -96,7 +128,8 @@ void Create::baud(unsigned char baudCode)
 		WriteToSerial(portDescriptor,ins,2);
 		//according to documentation you must wait
 		//100ms before sending another instruction
-		usleep(100000);
+		//usleep(100000);
+		SleepMS(100);
 		baudRate = getBaudCode(baudCode);
 	}
 	else
@@ -409,7 +442,8 @@ void Create::stream(unsigned char* destinationBuffer,void* thread,int n,...)
 		WriteToSerial(portDescriptor,ins,n+2);
 		streamingState = true;
 		//Read packets
-		 sleep(1);
+		 //sleep(1);
+		SleepMS(1000);
 		  *t= std::thread(ThreadedReadStream,portDescriptor,this,destinationBuffer,bytesToRead);
 				//t.join();
 	}
@@ -539,7 +573,8 @@ void Create::showScript()
 		unsigned char ins = 0x9A;
 		WriteToSerial(portDescriptor,&ins,1);
 		unsigned char ins2[101];
-		usleep(120000);
+		//usleep(120000);
+		SleepMS(120);
 		ReadFromSerial(portDescriptor,ins2,101);
 		int size = (int)ins2[0];
 		for(int i=0;i<size;i++)
@@ -1205,8 +1240,9 @@ int Create::readReqLVelocity(unsigned char *ins2)
 
 int Create::updateSensor(unsigned char packetID, int instructionSize)
 {	
-	unsigned char ins2[instructionSize];
-	usleep(120000);
+	unsigned char *ins2 = new unsigned char[instructionSize];
+	//usleep(120000);
+	SleepMS(120);
 	ReadFromSerial(portDescriptor,ins2,instructionSize);
 	int ret = -65536;
 	int offset=0;
@@ -1504,11 +1540,12 @@ int Create::updateSensor(unsigned char packetID, int instructionSize)
 int Create::getExternalSensors(int destinationArray[NUMBER_OF_SENSORS])
 {
 	GetSensors(destinationArray);
+	return 1;
 }
 
 int Create::getExternalNthSensor(int n)
 {
-	GetNthSensor(n);
+	return GetNthSensor(n);
 }
 
 bool Create::getExternalSensorsEnabledStatus()

@@ -1,13 +1,15 @@
 #ifndef UDG_CREATE_H
 #define UDG_CREATE_H
 
-
+#include <Windows.h>
 #include<string>
 #include<sstream>
 #include<vector>
 #include<stdio.h>
 #include <iostream>
+#ifdef __linux
 #include <unistd.h> 
+#endif
 #include <stdarg.h>
 #include <string.h>
 using namespace std;
@@ -23,6 +25,7 @@ enum oimodes{OIOFF,OIPASSIVE,OISAFE,OIFULL};
 enum infraredbytechars{IRLEFT=129,IRFORWARD,IRRIGHT,IRSPOT,IRMAX,IRSMALL,IRMEDIUM,IRLARGE,IRPAUSE,IRPOWER,
 		       IRARC_FORWARD_LEFT,IRARC_FORWARD_RIGHT,IRDRIVE_STOP,IRSENDALL,IRSEEKDOCK,IRRESERVED,
 		       IRRED,IRGREEN,IRFORCEFIELD,IRREDGREEN,IRREDFORCEFIELD,IRGREENFORCEFIELD,IRREDGREENFORCEFIELD};
+enum sensorPackets{S_PACKET0,S_PACKET1,S_PACKET2,S_PACKET3,S_PACKET4,S_PACKET5,S_PACKET6,S_BUMPS_AND_WHEEL_DROPS ,S_WALL,S_CLIFF_LEFT,S_CLIFF_FRONT_LEFT,S_CLIFF_FRONT_RIGHT,S_CLIFF_RIGHT,S_VIRTUAL_WALL,S_OVERCURRENTS,S_UNUSED1,S_UNUSED2,S_IR_BYTE,S_BUTTONS,S_DISTANCE,S_ANGLE,S_CHARGING_STATE,S_VOLTAGE,S_CURRENT,S_BATTERY_TEMPREATURE,S_BATTERY_CHARGE,S_BATTERY_CAPACITY};
 
 typedef enum VerbosityLevels {VERBOSITY_NORMAL,VERBOSITY_FILE,VERBOSITY_OFF, VERBOSITY_NUMBER_OF_LEVELS} t_verbosity;
 typedef enum BoolSigned {SIGNED, UNSIGNED} boolSigned;
@@ -186,7 +189,11 @@ class Create
 		int mode;
 		//TODO: implement charging by hardware
 		bool charging;
+#ifndef __linux
+		HANDLE portDescriptor;
+#else
 		int portDescriptor;
+#endif
 		int baudRate;
 				
 		bool bumpRight;
